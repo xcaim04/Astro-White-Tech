@@ -87,6 +87,7 @@ a:hover {
 }
 p {
     margin-bottom: 1em;
+    color: white;
 }
 .prose p {
     margin-bottom: 2em;
@@ -98,19 +99,30 @@ textarea {
 input {
     font-size: 16px;
 }
+li {
+    color: white;
+}
 table {
     width: 100%;
 }
 img {
     max-width: 100%;
-    height: auto;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
 }
 code {
     padding: 2px 5px;
-    background-color: rgb(var(--gray-light));
+    background-color: #202020;
+    backdrop-filter: blur(10px);
     border-radius: 2px;
 }
+
+code::before {
+    opacity: .2;
+}
+
 pre {
     padding: 1.5em;
     border-radius: 8px;
